@@ -20,7 +20,7 @@ const port = process.env.PORT || 5000;
 // CORS Middleware
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://echowrite-1ztm.onrender.com/"],
     credentials: true,
   })
 );
